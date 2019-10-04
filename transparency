@@ -1,0 +1,7 @@
+I use
+project -C-60/0 -A150,60 -G1 -L-180/180 >circle.txt
+pscoast -JQ-60/024c -Rg -Di -S153/204/255 -N1 -Ba0 -Bx0g15 -By0g90 -K > map.ps
+psxy circle.txt -R -J -O -G75/100/149 -t30 >>map.ps
+psconvert map.ps
+
+I get the dark inside circle but no transparency.
